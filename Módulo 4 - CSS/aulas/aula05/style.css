@@ -1,0 +1,29 @@
+body {
+    background-image: url('https://super.abril.com.br/wp-content/uploads/2018/02/spacex-falconheavy.png?quality=70&strip=info&resize=680,453');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+h1 {
+    font-size: 50px;
+    background-color: #665f66;
+}
+
+div {
+    background-color: #dc143c;
+}
+*/
+
+h1 {
+    color: #ff00ff;
+    /*border-color:#ff8c00;
+    border-width: 4px;
+    border-style: solid; */
+
+    border: 2px dashed #ff8c4C;
+}
+
+li {
+    color: #ff00ff;
+}
