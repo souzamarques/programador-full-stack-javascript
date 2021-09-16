@@ -1,3 +1,4 @@
+/* Classes são recomendadas para usos gerais. */
 .orange-text {
     color: #ff8c00;
 }
@@ -6,6 +7,7 @@
     font-size: 45px;
 }
 
+/* o uso de 'id' é recomendado para determinado elemento em específico. */
 #europa-text {
     font-size: 25px;
     color: #9932cc;
