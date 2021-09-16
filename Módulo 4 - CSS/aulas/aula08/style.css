@@ -1,0 +1,45 @@
+/* Todos os elementos serão estilizados
+* {
+    border: 2px solid;
+}
+*/
+
+/* Seletor de descendência
+li a {
+   color: #790707;
+   OBS: todos os tópicos da tag 'li', que contêm a tag 'a', ficarão
+   com a cor determinada na propriedade color
+} */
+
+/* Seletor filho
+li > a {
+    color: #610351;
+    
+    OBS: Toda tag 'a' que for filha da tag 'li', irá ser estilizada 
+    de acordo com a propriedade determinada.
+
+    OBS2: a diferença do seletor filho para o de descendência é que
+    no seletor de descendência todas as tags filhas serão impactadas.
+}
+*/
+
+/* Seletor Adjascente
+h1 + h4 {
+    border: 4px dashed;
+    OBS: toda tag 'h4' após a 'h1' irá ser estilizada
+}
+*/
+
+/* Seletor de Atributo
+a[href="seletorAdvanced.html"] {
+    color: #ff4500;
+    OBS: todos os anchors que estão em [] serão estilizados.
+}
+*/
+
+/* Pseudo-classe
+li:nth-of-type(2) {
+    color: #ff0a8d;
+    OBS: cada elemento que estiver na segunda posição, em uma ou mais tags 'li', serão estilizados.
+}
+*/
