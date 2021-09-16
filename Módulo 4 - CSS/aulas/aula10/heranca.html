@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Herança </title>
+        <style>
+            /*
+            div {
+                color:#0b2097;
+                OBS: As tags filhas de 'div' herdarão a cor definida.
+            }
+
+            div ul li {
+                color: #ff00ff;
+            }
+            */
+            div {
+                border: 2px solid #ff00ff;
+            }
+
+            div ul {
+                border: inherit;
+                /* a tag filha 'ul' irá herdar o estilo da tag pai 'div' */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1> Planetas: </h1>
+            <ul>
+                <li> Terra </li>
+                <li> Marte </li>
+                <li> Júpiter </li>
+            </ul>
+        </div>
+    </body>
+</html>
