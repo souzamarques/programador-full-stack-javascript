@@ -1,0 +1,27 @@
+#header {
+    border: 3px dashed #16c206;
+    background-color: #16c206;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Geostar', cursive;
+    color: #610a55;
+}
+
+.section1 {
+    background-color: #610a55;
+}
+
+.p1 {
+    font-family: 'Gemunu Libre', cursive;
+    font-size: 20px;
+    color: #16c206;
+}
+
+.p2 {
+    font-family: 'Caramel', cursive;
+    font-size: 25px;
+    color: #16c206;
+}
