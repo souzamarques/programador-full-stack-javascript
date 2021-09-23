@@ -1,0 +1,29 @@
+body {
+    width: 500px;
+}
+
+#idHeader {
+    background-color: #5bd57d;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+    color: #7130c7;
+    margin: 80px 75px 120px 85px;
+    width: 135px;
+    border: 2px solid;
+    padding: 20px 15px 30px 10px;
+}
+
+.pp {
+    font-family: 'Oswald', cursive;
+    font-size: 25px;
+    color: #5bd57d;
+}
+
+#idSection {
+    background-color: #7130c7;
+}
