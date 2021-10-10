@@ -1,0 +1,7 @@
+console.log("Bem vindo à Nave Elemental")
+console.info("Bem vindo à Nave Elementar")
+console.warn("Bem vindo à Nave Elementária")
+console.error("Bem vindo à Nave Elementário")
+// alert("Bem vindo Elemento")
+// confirm("Podemos decolar ?")
+// prompt("Elemento, qual o seu nome ?")
