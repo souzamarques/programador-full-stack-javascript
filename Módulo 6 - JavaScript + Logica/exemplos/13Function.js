@@ -1,5 +1,5 @@
-function greetPilot() {
-    console.log("Bom dia, piloto!")
+function greetPilot(nome, mensagem = "Olá") {
+    console.log(mensagem + ", " + nome)
 }
 
 function speedUp(velocidade, aceleracao) {
@@ -7,7 +7,7 @@ function speedUp(velocidade, aceleracao) {
     console.log("Acelerando. Nova velocidade: " + novaVelocidade + "km/s")
 }
 
-greetPilot()
+greetPilot("João Felippe")
 
 let velocidade = 50
 let aceleracao = 30
