@@ -4,7 +4,13 @@ function greetPilot(nome, mensagem = "Olá") {
 
 function speedUp(velocidade, aceleracao) {
     let novaVelocidade = velocidade + aceleracao
-    console.log("Acelerando. Nova velocidade: " + novaVelocidade + "km/s")
+    return novaVelocidade
+}
+
+function speedDown(velocidade, desacelerar) {
+    let velocidadeBaixa = velocidade - desacelerar
+    console.log("Desacelerando. Estamos a: " + velocidadeBaixa + "km/s")
+    return velocidadeBaixa
 }
 
 greetPilot("João Felippe")
@@ -12,4 +18,7 @@ greetPilot("João Felippe")
 let velocidade = 50
 let aceleracao = 30
 console.log("Velocidade: " + velocidade + "km/s")
-speedUp(velocidade, aceleracao)
+velocidade = speedUp(velocidade, aceleracao)
+console.log("Velocidade atual: " + velocidade + "km/s")
+let desacelerar = 15
+speedDown(velocidade, desacelerar)
