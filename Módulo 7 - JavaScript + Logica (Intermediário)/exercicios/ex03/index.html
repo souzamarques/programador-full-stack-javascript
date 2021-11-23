@@ -4,32 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Manipulando o DOM </title>
-    <script src="index.js"></script>
+    <title>Manipulando o DOM</title>
+    <script src="home-registration.js"></script>
   </head>
   <body>
+    <h3> Home Registration </h3>
+    <form>
       <p>
-          <label for="number"> Número da Residência: </label>
-          <input type="number" id="number" name="number" placeholder="Ex.: 111111" required>
+        <label> Área: </label>
+        <input type="text" name="area">
+      </p>
+        
+      <p>
+        <label> Número: </label>
+        <input type="text" name="number">
       </p>
 
       <p>
-          <label for="neighborhood"> Bairro: </label>
-          <input type="text" id="neighborhood" name="neighborhood" placeholder="Ex.: João XXIII">
+        <label> Bairro: </label>
+        <input type="text" name="neighborhood">
       </p>
 
       <p>
-          <label for="city"> Cidade: </label>
-          <input type="text" id="city" name="city" placeholder="Ex.: Fortaleza">
+        <label> Cidade: </label>
+        <input type="text" name="city">
       </p>
 
-      <p>
-          <label for="house"> Área da Casa: </label>
-          <input type="number" id="house" name="house" placeholder="Ex.: 100m²">
-      </p>
+      <button onclick="saveHouse()"> Salvar </button>
+    </form>
 
-      <p>
-          <button onclick="show()"> Adicionar </button>
-      </p>
+    <ul id="house-list"></ul>
   </body>
 </html>
