@@ -7,6 +7,13 @@ const Planets = () => {
             <h3> Planet List </h3>
             <hr />
             <Planet />
+            <Planet />
+            <Planet />
+            <Planet />
+            <Planet />
+            <Planet />
+            <Planet />
+            <Planet />
         </Fragment>
     );
 }
