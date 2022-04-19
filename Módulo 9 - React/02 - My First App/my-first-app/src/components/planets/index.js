@@ -1,35 +1,44 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import Planet from "./planet";
+import Form from "../planet/form";
+
+async function getPlanets() {
+  let response = await fetch("http://localhost:3000/api/planets.json");
+  let data = await response.json();
+  return data;
+}
 
 const Planets = () => {
+  const [planets, setPlanets] = useState([
+  ]);
+
+  useEffect(() => {
+    getPlanets().then((data) => {
+      setPlanets(data['planets'])
+    });
+  }, []);
+
+  const addPlanet = (new_planet) => {
+    setPlanets([...planets, new_planet])
+  }
+
   return (
     <Fragment>
       <h3> Planet List </h3>
       <hr />
-      <Planet
-        name="Mercúrio"
-        description="Mercúrio é o menor e mais interno planeta do Sistema 
-                     Solar, orbitando o Sol a cada 87,969 dias terrestres. 
-                     A sua órbita tem a maior excentricidade e o seu eixo 
-                     apresenta a menor inclinação em relação ao plano da 
-                     órbita dentre todos os planetas do Sistema Solar. 
-                     Mercúrio completa três rotações em torno de seu eixo 
-                     a cada duas órbitas. "
-        link="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)"
-        img_url="https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg"
-      />
+        <Form addPlanet={addPlanet} />
+      <hr />
 
-      <Planet
-        name="Plutão"
-        description="Plutão, formalmente designado 134340 Plutão, é um 
-                     planeta anão do Sistema Solar e o nono maior e décimo 
-                     mais massivo objeto observado diretamente orbitando o 
-                     Sol. Originalmente classificado como um planeta, Plutão é 
-                     atualmente o maior membro conhecido do cinturão de 
-                     Kuiper, uma região de corpos além da órbita de Netuno. "
-        link="https://pt.wikipedia.org/wiki/Plut%C3%A3o"
-        img_url="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/600px-Pluto_in_True_Color_-_High-Res.jpg"
-      />
+      {planets.map((planet, index) => (
+        <Planet
+          id={planet.id}
+          name={planet.name}
+          description={planet.description}
+          img_url={planet.img_url}
+          link={planet.link}
+          key={index}
+        />
+      ))}
     </Fragment>
   );
 };
